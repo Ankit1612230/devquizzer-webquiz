@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevQuizzer - Web Dev Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-300 font-sans h-screen flex items-center justify-center">
+
+  <div id="quiz-container" class="bg-white w-full max-w-lg rounded-xl shadow-xl p-8 space-y-6 text-center">
+    <h1 class="text-3xl font-bold text-indigo-700">DevQuizzer</h1>
+    <p class="text-lg text-gray-600">Test your Web Development knowledge!</p>
+
+    <div id="question-container">
+      <!-- Question and options will appear here -->
+    </div>
+
+    <div id="result-container" class="hidden">
+      <p class="text-2xl font-semibold text-indigo-600" id="score-text">Your Score: 0</p>
+      <button id="restart-btn" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 mt-4">
+        Restart Quiz
+      </button>
+    </div>
+
+    <button id="next-btn" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 mt-4 hidden">
+      Next Question
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
